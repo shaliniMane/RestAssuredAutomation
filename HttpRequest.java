@@ -2,6 +2,7 @@ package restAssuredAutomation;
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
+
 /*
 given()
 content type, st cookies, add auth, add param, set headers, info etc....
@@ -31,6 +32,7 @@ public class HttpRequest {
 	@Test(priority=2)
 	void createUser()
 	{
+		
 		HashMap data= new HashMap();
 		data.put("name", "shalini");
 		data.put("Job", "Automation tester");
